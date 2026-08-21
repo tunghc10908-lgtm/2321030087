@@ -1,8 +1,1 @@
-<html>
-<head>
-    <title> Xin Chào Mọi Người </title>
-</head>
-    <body>
-    đây là bài làm của e
-    </body>
-</html>
+# 2321030087
