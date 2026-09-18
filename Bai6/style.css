@@ -1,0 +1,89 @@
+body{
+    background-color: #1C1B20;
+    color: white;
+    margin: 0px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    background-color: black;
+}
+.danh-sach-muc{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding: 0 20px;
+}
+.lien-ket-muc{
+    text-decoration: none;
+    color: #BCBBBF;
+}
+.dang-chon{
+    background-color: #4C4B51;
+    color: white;
+}
+.muc{
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.logo{
+    width: 100px;
+}
+.avatar{
+    width: 40px;
+    border-radius: 20px;
+}
+.muc:hover{
+    background-color: red;
+}
+.banner{
+    width: 90%;
+    background-color: black;
+    margin: 20px auto;
+}
+.banner-img{
+    width: 100%;
+    border-radius: 20px;
+}
+.the-loai{
+    width: 90%;
+    margin: 10px auto;
+}
+.danh-sach-phim{
+    display: flex;
+    justify-content: space-between;
+}
+.phim{
+    width: 19%;
+    height: 20vh;
+    margin: 20px 0px;
+    img{
+        width: 100% ;
+        height: 20vh;
+        border-radius: 20px;
+    }
+}
+.avata{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+.ava{
+    width: 14%;
+    height: 20vh;
+    margin: 20px 0px;
+    img{
+        width: 175px ;
+        height: 175px;
+        border-radius: 50%;
+    }
+}
+.mo-ta{
+    width: 50%;
+    height: 200px;
+    margin: auto;
+    background-color: red;
+}
