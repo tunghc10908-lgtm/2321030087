@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            display: flex;
+        }
+        .trai{
+            width: 75%;
+            display: flex;
+            justify-self: center;
+        }
+        .phai{
+            width: 25%;
+            border: 1px solid gray;
+            border-radius: 20px;
+        }
+        .video{
+            width: 95%;
+            height: 450px;
+            background-color: black;
+            border-radius: 20px;
+        }
+        h1{
+            text-align: center;
+        }
+        .bai-hat{
+            width: 90%;
+            height: 80px;
+            margin: 10px auto;
+            display: flex;
+            align-items: center;
+        }
+        .bai-hat:hover{
+            background-color: gray;
+        }
+        img{
+            width: 30%;
+            margin-right: 10px;
+        }
+        p{
+            width: 75%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="trai">
+            <div class="video">
+                <iframe class="video" width="100%" height="100%" src="https://www.youtube.com/embed/tbgFUbwmwXI?si=jFpZQcALbhBbazcv"></iframe>
+            </div>
+        </div>
+        <div class="phai">
+            <h1>Danh sách phát</h1>
+            <div class="danh-sach">
+                <div onclick="chonBai(1)" class="bai-hat">
+                    <img class="anh-bai" src="./anh/Muộn rồi mà sao còn.jpg" alt="">
+                    <p>Muộn rồi mà sao còn</p>
+                </div>
+                <div onclick="chonBai(2)" class="bai-hat">
+                    <img class="anh-bai" src="./anh/Một năm mới bình an.jpg" alt="">
+                    <p>Một năm mới bình an</p>
+                </div>
+                <div onclick="chonBai(3)" class="bai-hat">
+                    <img class="anh-bai" src="./anh/Nơi này có anh.jpg" alt="">
+                    <p>Nơi này có anh</p>
+                </div>
+                <div onclick="chonBai(4)" class="bai-hat">
+                    <img class="anh-bai" src="./anh/Đừng làm trái tim anh đau.jpg" alt="">
+                    <p>Đừng làm trái tim anh đau</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        var danhSachBaiHat = [
+            {
+                id:1,
+                ten: "Muộn rồi mà sao còn",
+                duongDanAnh: "./anh/Muộn rồi mà sao còn.jpg",
+                duongDanYoutube: "https://www.youtube.com/embed/tbgFUbwmwXI?si=jFpZQcALbhBbazcv",
+            },
+            {
+                id:2,
+                ten: "Một năm mới bình an",
+                duongDanAnh: "./anh/Một năm mới bình an.jpg",
+                duongDanYoutube: "https://www.youtube.com/embed/Thf6-faRGI4?si=FT6XGs7WDHTrJnSf",
+            },
+            {
+                id:3,
+                ten: "Nơi này có anh",
+                duongDanAnh: "./anh/Nơi này có anh.jpg",
+                duongDanYoutube: "https://www.youtube.com/embed/FN7ALfpGxiI?si=_qZkAfeesPVgMxyA",
+            },
+            {
+                id: 4,
+                ten: "Đừng làm trái tim anh đau",
+                duongDanAnh: "./anh/Đừng làm trái tim anh đau.jpg",
+                duongDanYoutube: "https://www.youtube.com/embed/abPmZCZZrFA?si=SW8NKRcrA5Le5_If",
+            },
+        ];
+
+        function chonBai(id) {
+            for (let i = 0; i < danhSachBaiHat.length; i++) {
+                if(danhSachBaiHat[i].id == id){
+                    document.getElementsByClassName("video")[1].src = danhSachBaiHat[i].duongDanYoutube
+                }
+            }
+        }
+    </script>
+</body>
+</html>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/tbgFUbwmwXI?si=jFpZQcALbhBbazcv"></iframe> -->
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/Thf6-faRGI4?si=FT6XGs7WDHTrJnSf"></iframe> -->
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/FN7ALfpGxiI?si=_qZkAfeesPVgMxyA"></iframe> -->
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/abPmZCZZrFA?si=SW8NKRcrA5Le5_If"></iframe> -->
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/30KI5SuECuc?si=EpSJzxc3WIFqIbVD"></iframe> -->
