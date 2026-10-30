@@ -208,6 +208,90 @@
         else{
             document.writeln("<br>" + "Điểm không hợp lệ")
         }
+
+        // object: var name = { }
+        var thongTinSinhVien = {
+            hoTen: "Hoang Duy Tung",
+            tuoi: 29,
+            gioiTinh: true, //true: Nam, false: Nữ
+            diaChi: {
+                thanhPho: "Ha Noi",
+                phuong: "Dong Ngac",
+                duong: "Le Van Hien"
+            }
+        }
+
+        var thongTinPhim = {
+            tenPhim: "",
+            thoiLuong: "",
+            tomtatPhim: "",
+            theLoai: "",
+            dienVien: {
+                dienVienChinh: [
+                    "Hoang Duy Tung","Dang Quoc Viet"
+                ],
+                dienVienPhu: [
+                    "Hoang Duy Tung","Dang Quoc Viet"
+                ],
+            },
+            daoDien: "",
+            quocGia: "",
+            ngonNgu: "",
+            ngayChieu: "",
+        }
+
+        document.writeln("<br>");
+        document.writeln(thongTinPhim.dienVien.dienVienChinh);
+        
+        document.writeln("<br>");
+        //switch case
+        var d = new Date();
+        var theDay = d.getDay();
+        switch (theDay) {
+            case 5:
+                document.writeln("Finally Friday");
+                break;
+            case 6:
+                document.writeln("Super Saturday");
+                break;
+            case 0:
+                document.writeln("Sleepy Sunday");
+                break;
+            default:
+                document.writeln("I'm looking forward to this weekend!");
+        }
+
+        for (var index = 1; index <= 2; index++) {
+            document.writeln("<br> Xin chào");
+        }
+
+        var danhSachSinhVien = ["Tung","Viet","Huy","Duc"]
+            document.writeln("<br>" + danhSachSinhVien[0]);
+            for(var i = 0; i < danhSachSinhVien.length; i++){
+                document.writeln("<br>");
+                document.writeln("" + danhSachSinhVien[i]);
+            }
+            if(danhSachSinhVien[i]=="Tung"||danhSachSinhVien[i]=="Huy"){
+                document.writeln("<br> Xin chào " + danhSachSinhVien[i]);
+            }
+            else{}
+            //popup boxes
+            // alert("Xin chao!");
+
+            confirm
+            var r = confirm("Press a button")
+            if (r == true) {
+                document.write("You pressed OK!")
+            }
+            else {
+                document.write("You pressed Cancel!")
+            }
+
+            //popup boxes: cho phép
+            //prompt
+            var ten1 = prompt("Nhập vào họ tên", "nhập tên vào đây!")
+            document.write(ten1)
+            //functions: hàm
     </script>
     <!-- external JS -->
     <!-- <scriptsrc="script.jt"></script> -->
